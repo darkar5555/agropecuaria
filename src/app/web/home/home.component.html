@@ -1,0 +1,143 @@
+<div class="container-fluid">
+  <div class="row">
+      <carousel>
+          <slide class="animated fadeIn">
+            <img src="assets/images/carousel/agro1.jpg" alt="first slide" style="display: block; width: 100%;">
+          </slide>
+          <slide class="animated fadeIn">
+            <img src="assets/images/carousel/agro2.jpg" alt="second slide" style="display: block; width: 100%;">
+          </slide>
+          <slide class="animated fadeIn">
+            <img src="assets/images/carousel/pollo1.jpg" alt="third slide" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <h3 class="text-center animated bounceInDown slow">Principales Productos</h3>
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+      <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 margenes animated bounce delay-2s">
+            <div class="wrap animated zoomIn">
+              <div class="contenido-producto">
+                <p class="text-center text-productos">
+                  <b class="text-uppercase">cefquinox</b>  
+                  <br> Cefalosporina de 4ta generación. Actúa contra las bacterias más resistentes del medio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margenes">
+            <div class="wrap1 animated zoomIn">
+              <div class="contenido-producto">
+                <p class="text-center text-productos">
+                  <b class="text-uppercase">otiderma</b>
+                  <br> Suspensión Ótica, Combinación antibiótica - antiinflamatoria
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margenes">
+            <div class="wrap2 animated zoomIn">
+              <div class="contenido-producto">
+                <p class="text-center text-productos">
+                  <b class="text-uppercase">PEN DUO STREP® 250/200</b>
+                  <br> Para el tratamiento de artritis, mastitis e infecciones del tracto gastrointestinal, respiratorio y urinario.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margenes">
+            <div class="wrap3 animated zoomIn">
+              <div class="contenido-producto">
+                <p class="text-center text-productos">
+                  <b class="text-uppercase"> Fipronex G5</b>
+                  <br>Panectocida de formulación única indicado para la prevención y tratamiento de infestaciones por pulgas, garrapatas, ácaros y piojos en perros.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margenes">
+            <div class="wrap4 animated zoomIn">
+              <div class="contenido-producto">
+                <p class="text-center text-productos">
+                  <b class="text-uppercase"> GALLOMEC PLUS</b>
+                  <br> Para el tratamiento y control de nematodos gastroentéricos, traqueopulmonares y renales
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margenes">
+            <div class="wrap5 animated zoomIn">
+              <div class="contenido-producto">
+                <p class="text-center text-productos">
+                  <b class="text-uppercase"> NEXTGUARD 4</b>
+                  <br> La combinación antiparasitaria de sus componentes actúa efectivamente contra cestodos (tenias), nematodos (gusanos redondos) y larvas de Dirofilaria immitis.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="contactanos">
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center animated bounceInDown slow">Contáctanos</h3>
+      <div class="col-md-offset-4 col-md-4 col-sm-6 col-xs-12">
+        <form [formGroup]="formaContacto" (ngSubmit)="enviar()" class="form-horizontal formulario animated slideInUp slow">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" formControlName="nombre" id="inputEmail3" placeholder="Nombre">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Apellido</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" formControlName="apellido" id="inputEmail3" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Empresa (opcional)</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" formControlName="empresa" id="inputEmail3" placeholder="Empresa">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Telefono</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" formControlName="telefono" id="inputPassword3" placeholder="Telefono">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Correo Electrónico</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" formControlName="correo" id="inputEmail3" placeholder="Correo">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Mensaje</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" formControlName="mensaje" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

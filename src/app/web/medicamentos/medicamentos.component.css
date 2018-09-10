@@ -1,0 +1,52 @@
+.tab-pane>ul>li{
+    padding-bottom: 50px;
+    list-style: none;
+}
+a{
+    background-color: #1270a7;
+    border-radius: 4px;
+    color: #ffe;
+    padding: 8px;
+}
+
+.titulo{
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+.container .tab-pane>ul>li.active>a{
+
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;    
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.fondo{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.text-medicamentos{
+    font-size: 0.9em;
+    font-family: 'Gotham-Book', 'Arial', sans-serif;
+    color: #333;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    height: 210px;
+    padding-top: 30px;
+
+}
